@@ -52,7 +52,7 @@ class Ficard extends StatelessWidget {
             Positioned(
              bottom:20,
                 left: 20,
-                child: Text("DEVIKA ",style :GoogleFonts.aBeeZee(fontSize: 28,color: Colors.grey),)),
+                child: Text("DEVIKA A",style :GoogleFonts.aBeeZee(fontSize: 28,color: Colors.grey),)),
 
 
             Positioned (
