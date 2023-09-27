@@ -3,6 +3,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:math';
 
+import 'package:simple_gradient_text/simple_gradient_text.dart';
+
+
+void main() {
+  runApp( MaterialApp(
+    home: Ficard(),
+  ));
+}
+
 class Ficard extends StatelessWidget {
 
   @override
@@ -22,26 +31,57 @@ class Ficard extends StatelessWidget {
              Positioned(
                top :80,
              left:30,
-           child:  Transform.rotate(
-             angle:90 * pi /180,
+
              child: Row(
                   children: [
-                    FaIcon(FontAwesomeIcons.simCard,color:Colors.grey,),
+          Transform.rotate(
+             angle:90 * pi /180,
+                  child:  FaIcon(FontAwesomeIcons.simCard,color:Colors.grey,)),
                     SizedBox(width:8 ,),
 
                     Transform.rotate(
                       angle: 90 * pi /180,
                         child: FaIcon(FontAwesomeIcons.wifi,color:Colors.grey,))
                   ],
-                )),
 
-
+                ),
              ),
-            Text("DEVIKA ",style :GoogleFonts.aBeeZee(),),
-            Text("VISA")
+
+
+
+            Positioned(
+             bottom:20,
+                left: 20,
+                child: Text("DEVIKA ",style :GoogleFonts.aBeeZee(fontSize: 28,color: Colors.grey),)),
+
+
+            Positioned (
+              bottom: 10,
+                right: 20,
+                child: Text("VISA",style :GoogleFonts.aBeeZee(fontSize: 28,color: Colors.grey),)),
+
+            Positioned(
+              top: 10,
+                right: 20,
+                child: GradientText("FI",
+                style: GoogleFonts.fahkwang(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 28),
+                  colors:[
+                    Colors.black38,
+                  Colors.white,
+                  Colors.black26
+                    ],
+                  stops: [
+                    0,.3,1
+                    ],
+
+                ))
           ],
-        )
-      )
+        ),
+
+    ),
     );
   }
-}
+  }
+
