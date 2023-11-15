@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projecttt_july/storages/loginshared.dart';
+import 'package:projecttt_july/storages/sharedpreff/loginshared.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeShared extends StatefulWidget {
