@@ -40,6 +40,18 @@ dependencies:
   readmore: ^2.2.0
   google_maps_flutter: ^2.5.0
   shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  permission_handler: ^11.0.1
+  sqflite: ^2.3.0
+  image_picker: ^1.0.4
+  get: ^4.6.6
+  email_validator: ^2.1.17
+  firebase_core: ^2.21.0
+  firebase_auth: ^4.12.1
+  google_sign_in:
+  firebase_storage: ^11.5.0
+  path_provider:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -48,6 +60,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
